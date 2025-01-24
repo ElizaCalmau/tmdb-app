@@ -12,7 +12,11 @@ export const SidebarItem: React.FC<SidebarItemProps> = ({ navItem }) => {
   const pathname = usePathname();
   const isActive = pathname === href;
   return (
-    <div>
+    <div
+      className={`my-4 font-semibold ${
+        isActive ? "text-yellow-300" : "text-neutral-200"
+      } `}
+    >
       <Link href={href} className="flex flex-row">
         <Image
           src={isActive ? icon_active : icon_default}
@@ -20,7 +24,7 @@ export const SidebarItem: React.FC<SidebarItemProps> = ({ navItem }) => {
           width={24}
           height={24}
         />
-        <div>{title}</div>
+        <div className="pl-2">{title}</div>
       </Link>
     </div>
   );
