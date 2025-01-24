@@ -5,7 +5,7 @@ import { SidebarNavItem } from "./constants";
 import { usePathname } from "next/navigation";
 
 interface SidebarItemProps {
-  navItem: SidebarNavItem; // Use SidebarNavItem type for the navItem prop
+  navItem: SidebarNavItem;
 }
 export const SidebarItem: React.FC<SidebarItemProps> = ({ navItem }) => {
   const { title, href, icon_default, icon_active } = navItem;
