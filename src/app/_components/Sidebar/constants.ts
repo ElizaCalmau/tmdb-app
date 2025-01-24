@@ -5,7 +5,7 @@ export interface SidebarNavItem {
   icon_active: string;
 }
 
-export const SidebarConfig: SidebarNavItem[] = [
+export const SIDEBAR_NAV_ITEMS: SidebarNavItem[] = [
   {
     title: "Home",
     href: "/",
