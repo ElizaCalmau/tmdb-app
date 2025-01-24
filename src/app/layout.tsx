@@ -7,6 +7,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import { Sidebar } from "./_components/Sidebar/Sidebar";
+import { CategoriesNav } from "./_components/CategoriesNav/CategoriesNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,9 +42,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${robotoMono.variable} antialiased`}>
+      <body className={`${robotoMono.variable} antialiased flex`}>
         <Sidebar />
-        {children}
+        <div>
+          <CategoriesNav />
+
+          {children}
+        </div>
       </body>
     </html>
   );
