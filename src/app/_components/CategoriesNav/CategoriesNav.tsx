@@ -3,11 +3,11 @@ import { CategoriesNavItem } from "./CategoriesNavItem";
 import {
   CategoriesNavItem as Prop,
   CATEGORIES_NAV_ITEMS,
-} from "../../constants";
+} from "../../[categories]/constants";
 
 export const CategoriesNav = () => {
   return (
-    <div>
+    <div className="flex flex-row gap-3 m-8 w-full h-fit">
       {CATEGORIES_NAV_ITEMS.map((navItem: Prop) => (
         <CategoriesNavItem key={navItem.title} navItem={navItem} />
       ))}
