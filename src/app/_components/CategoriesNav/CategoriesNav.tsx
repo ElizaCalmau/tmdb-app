@@ -3,7 +3,7 @@ import { CategoriesNavItem } from "./CategoriesNavItem";
 import {
   CategoriesNavItem as Prop,
   CATEGORIES_NAV_ITEMS,
-} from "../../[categories]/constants";
+} from "../../home/[categories]/constants";
 
 export const CategoriesNav = () => {
   return (

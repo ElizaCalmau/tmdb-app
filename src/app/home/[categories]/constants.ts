@@ -16,22 +16,22 @@ export interface CategoriesNavItem {
 export const CATEGORIES_NAV_ITEMS: CategoriesNavItem[] = [
   {
     title: "Popular",
-    route: "/popular",
+    route: "/home/popular",
     api: "",
   },
   {
     title: "Top Rated",
-    route: "/top_rated",
+    route: "/home/top_rated",
     api: "",
   },
   {
     title: "Now Palying",
-    route: "/now_playing",
+    route: "/home/now_playing",
     api: "",
   },
   {
     title: "Genres",
-    route: "/genres",
+    route: "/home/genres",
     api: "",
   },
 ];

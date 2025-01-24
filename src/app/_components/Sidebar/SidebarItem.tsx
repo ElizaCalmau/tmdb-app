@@ -10,7 +10,8 @@ interface SidebarItemProps {
 export const SidebarItem: React.FC<SidebarItemProps> = ({ navItem }) => {
   const { title, href, icon_default, icon_active } = navItem;
   const pathname = usePathname();
-  const isActive = pathname === href;
+  const isActive = pathname.includes(href);
+  console.log("path", pathname.includes(href));
   return (
     <div
       className={`my-4 font-semibold ${

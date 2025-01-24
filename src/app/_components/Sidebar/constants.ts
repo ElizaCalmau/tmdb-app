@@ -8,7 +8,7 @@ export interface SidebarNavItem {
 export const SIDEBAR_NAV_ITEMS: SidebarNavItem[] = [
   {
     title: "Home",
-    href: "/",
+    href: "/home",
     icon_active: "/icons/home_active.png",
     icon_default: "/icons/home.png",
   },

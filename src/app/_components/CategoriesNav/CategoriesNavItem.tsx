@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { CategoriesNavItem as Prop } from "../../[categories]/constants";
+import { CategoriesNavItem as Prop } from "../../home/[categories]/constants";
 import { usePathname } from "next/navigation";
 
 export const CategoriesNavItem = ({ navItem }: { navItem: Prop }) => {
